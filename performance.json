@@ -1,0 +1,26 @@
+[
+  {
+    "asset_id": "A001",
+    "uptime": 240,  
+    "downtime": 20, 
+    "maintenance_costs": 300.00, 
+    "failure_rate": 0.05, 
+    "efficiency": 95 
+  },
+  {
+    "asset_id": "A002",
+    "uptime": 180,
+    "downtime": 60,
+    "maintenance_costs": 500.00,
+    "failure_rate": 0.15, 
+    "efficiency": 75
+  },
+  {
+    "asset_id": "A003",
+    "uptime": 220,
+    "downtime": 40,
+    "maintenance_costs": 200.00,
+    "failure_rate": 0.03,
+    "efficiency": 97
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "asset_id": "A001",
+    "asset_name": "Generator 1",
+    "asset_type": "Generator",
+    "location": "Building A",
+    "purchase_date": "2022-01-15",
+    "initial_cost": 5000.00,
+    "operational_status": "Active"
+  },
+  {
+    "asset_id": "A002",
+    "asset_name": "Compressor 1",
+    "asset_type": "Compressor",
+    "location": "Building B",
+    "purchase_date": "2022-02-20",
+    "initial_cost": 3000.00,
+    "operational_status": "Inactive"
+  },
+  {
+    "asset_id": "A003",
+    "asset_name": "Pump 1",
+    "asset_type": "Pump",
+    "location": "Building C",
+    "purchase_date": "2021-12-10",
+    "initial_cost": 2000.00,
+    "operational_status": "Active"
+  }
+]
