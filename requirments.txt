@@ -1,7 +1,7 @@
 python -m venv venv
 .\venv\Scripts\activate
 
-pip install fastapi uvicorn pymongo requests
+pip install fastapi pydantic uvicorn pymongo requests
 
 uvicorn main:app --reload
 

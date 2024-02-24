@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from pymongo import MongoClient
 from pydantic import BaseModel
@@ -45,12 +45,14 @@ def is_asset_id_valid(asset_id: str):
 def is_performance_metric_id_valid(asset_id: str):
     return db.performance_metrics.find_one({"asset_id": asset_id}) is not None
 
-def get_current_username(credentials: HTTPBasicCredentials = Depends(security)):
-    correct_username = "admin"
-    correct_password = "password"
-    if credentials.username != correct_username or credentials.password != correct_password:
-        raise HTTPException(status_code=401, detail="Unauthorized")
-    return credentials.username
+def get_current_username(request: Request, credentials: HTTPBasicCredentials = Depends(security)):
+    if request.method != "GET":
+        correct_username = "admin"
+        correct_password = "password"
+        if credentials.username != correct_username or credentials.password != correct_password:
+            raise HTTPException(status_code=401, detail="Unauthorized")
+        return credentials.username
+    return None
 
 @app.get("/")
 async def root():
