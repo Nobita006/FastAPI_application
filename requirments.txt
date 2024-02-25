@@ -6,3 +6,8 @@ pip install fastapi pydantic uvicorn pymongo requests
 uvicorn main:app --reload
 
 
+fastapi==0.68.0
+uvicorn==0.15.0
+pymongo==4.0.1
+pydantic==1.9.0
+requests==2.26.0
