@@ -65,6 +65,7 @@ This is a sample FastAPI application serving as the backend for an Asset Perform
 2. Once the application is running, you can access the API documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
    ![image](Screenshots\ss2.png)
+   ![Alt text](Screenshots/ss1.png)
 
 
 ### Authentication
