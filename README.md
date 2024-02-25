@@ -52,7 +52,7 @@ This is a sample FastAPI application serving as the backend for an Asset Perform
 7. Sample data files assets.json and performance_metrics.json contain mock data for assets and performance_metrics, respectively. You can use these files to populate the database with sample data for testing.
    Create 2 collections 'assets' and 'performance_metrics' in the 'asset_performance_dashboard' database.
    
-   ![image](Screenshots\ss1.png)
+   ![Alt text](Screenshots/ss1.png)
 
 9. Start the FastAPI server:
     ```bash
@@ -64,8 +64,7 @@ This is a sample FastAPI application serving as the backend for an Asset Perform
 1. The API will be available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 2. Once the application is running, you can access the API documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
-   ![image](Screenshots\ss2.png)
-   ![Alt text](Screenshots/ss1.png)
+   ![Alt text](Screenshots/ss2.png)
 
 
 ### Authentication
