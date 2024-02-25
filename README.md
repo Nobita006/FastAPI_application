@@ -108,7 +108,7 @@ Every endpoint other than root and /docs needs authentication.
 - **PUT /performance_metrics/{asset_id}**: Update an existing performance metric.
 - **DELETE /performance_metrics/{asset_id}**: Delete an existing performance metric.
 
-### Insights
+  ### Insights
 - **GET /insights/average_downtime**: Get the average downtime across all assets.
 - **GET /insights/total_maintenance_costs**: Get the total maintenance costs across all assets.
 - **GET /insights/high_failure_assets**: Get the assets with high failure rates.
